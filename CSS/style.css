@@ -47,3 +47,10 @@ body {
     padding-left: 15px;
     margin-bottom: 20px;
 }
+
+.footer {
+  background-image: url("../img/rhombus-grid.svg"); /* ganti dengan path gambar kamu */
+  background-repeat: no-repeat; /* biar tidak berulang */
+  background-position: right bottom; /* posisikan di kanan bawah */
+  background-size: contain; /* sesuaikan ukuran agar tidak kepotong */
+}
