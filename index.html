@@ -16,6 +16,7 @@
     <!-- css -->
     <link rel="stylesheet" href="CSS/style.css" />
     <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="CSS/aos.css" >
     </head>
     <body>
 
@@ -70,7 +71,10 @@
         <div class="container">
         <div class="row align-items-center">
             <!-- Text -->
-            <div class="col-md-8">
+            <div class="col-md-8"
+            data-aos="fade-up" 
+                data-aos-duration="3000"
+            >
             <h1 class="hero-title">
                 Selamat Datang,<br /> 
                 di Website Resmi <br /> 
@@ -82,14 +86,23 @@
                 eiusmod tempor incididunt ut labore et dollore magna aliqua.
             </p>
             <div>
-                <a href="#" class="btn btn-outline-dark"
-                >Selengkapnya <i class="material-icons">arrow_forward</i></a
+                <a href="#" 
+                data-aos="fade-up" 
+                data-aos-duration="3000"
+                class="btn btn-outline-dark"
+                 >Selengkapnya <i class="material-icons">arrow_forward</i></a
                 >
-                <a href="#" class="btn btn-dark">Daftar Sekarang</a>
+                <a href="#" 
+                data-aos="fade-up" 
+                data-aos-duration="3000"
+                class="btn btn-dark">Daftar Sekarang</a>
             </div>
             </div>
             <!-- Image -->
-            <div class="col-md-4 text-center">
+            <div class="col-md-4 text-center"
+            data-aos="fade-up" 
+                data-aos-duration="3000"     
+            >
             <img 
             src="img/Chat-bot-assistant.svg" 
             alt="Hero image"
@@ -113,23 +126,36 @@
             style="width: 80px; height: auto"
           />
 
-          <h2 class="fw-bold w-50">FASILITAS UNGGULAN DI SMK JAKARTA 02</h2>
+          <h2 class="fw-bold w-50"
+          data-aos="fade-right"
+          data-aos-duration="2000"
+          >
+          FASILITAS UNGGULAN DI SMK JAKARTA 02</h2>
           <a href="#" class="fw-bold text-dark">Selengkapnya</a>
         </div>
 
         <!-- Card Grid -->
         <div class="row">
           <!-- Card 1 -->
-          <div class="col-6 col-md-4 p-2">
+          <div class="col-6 col-md-4 p-2"
+          >
             <div class="card h-100 shadow-sm rounded">
-              <div class="card-body">
+              <div class="card-body"
+              data-aos="fade-up" 
+                data-aos-duration="3000"
+              >
                 <img src="img/folder.svg" alt="" width="50" class="mb-3" />
-                <h5 class="fw-bold">Laboratorium Komputer</h5>
-                <p class="text-muted small mb-3">
+                <h5 class="fw-bold" 
+                >Laboratorium Komputer</h5>
+                <p class="text-muted small mb-3"
+                >
                   Laboratorium komputer lengkap untuk mendukung praktik siswa
                   dalam bidang multimedia dan jaringan.
                 </p>
-                <a href="#" class="btn btn-dark btn-sm rounded-3"
+                <a href="#" 
+                data-aos="fade-up" 
+                data-aos-duration="2000" 
+                class="btn btn-dark btn-sm rounded-3"
                   >Selengkapnya</a
                 >
               </div>
@@ -139,14 +165,20 @@
           <!-- Card 2 -->
           <div class="col-6 col-md-4 p-2">
             <div class="card h-100 shadow-sm rounded">
-              <div class="card-body">
+              <div class="card-body"
+              data-aos="fade-up" 
+                data-aos-duration="3000"
+              >
                 <img src="img/Network.svg" alt="" width="50" class="mb-3" />
                 <h5 class="fw-bold">Laboratorium Sains</h5>
                 <p class="text-muted small mb-3">
                   Fasilitas laboratorium sains modern untuk mendukung
                   pembelajaran berbasis eksperimen.
                 </p>
-                <a href="#" class="btn btn-dark btn-sm">Selengkapnya</a>
+                <a href="#" 
+                data-aos="fade-up" 
+                data-aos-duration="2000"
+                class="btn btn-dark btn-sm">Selengkapnya</a>
               </div>
             </div>
           </div>
@@ -154,14 +186,20 @@
           <!-- Card 3 -->
           <div class="col-md-4 p-2">
             <div class="card h-100 shadow-sm rounded">
-              <div class="card-body">
+              <div class="card-body"
+              data-aos="fade-up" 
+                data-aos-duration="3000"
+              >
                 <img src="img/Geography.svg" alt="" width="50" class="mb-3" />
                 <h5 class="fw-bold">Lapangan Olahraga</h5>
                 <p class="text-muted small mb-3">
                   Sarana olahraga untuk meningkatkan kesehatan dan mendukung
                   kegiatan ekstrakurikuler siswa.
                 </p>
-                <a href="#" class="btn btn-dark btn-sm">Selengkapnya</a>
+                <a href="#" 
+                data-aos="fade-up" 
+                data-aos-duration="2000"
+                class="btn btn-dark btn-sm">Selengkapnya</a>
               </div>
             </div>
           </div>
@@ -504,9 +542,114 @@
       </div>
     </footer>
 
+<script>
+      let btn = document.getElementById("btnTop");
+
+      // Tampilkan tombol saat scroll > 300px
+      window.onscroll = function () {
+        if (
+          document.body.scrollTop > 300 ||
+          document.documentElement.scrollTop > 300
+        ) {
+          btn.style.display = "block";
+        } else {
+          btn.style.display = "none";
+        }
+      };
+
+      // Fungsi kembali ke atas
+      function topFunction() {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+    </script>
+
     <!-- jquery -->
         <script src="js/jquery.min.js"></script>
     <!-- js -->
+      <script src="https://cdn.jsdelivr.net/npm/tsparticles/tsparticles.bundle.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@tsparticles/jquery"></script>
+
+        <script src="js/aos.js"></script>
         <script src="js/bootstrap.bundle.min.js"></script>
+
+        <script>
+          AOS.init();
+          // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
+      // starting from v2 you can add only the features you need reducing the bundle size
+      $(document).ready(async function () {
+        await loadFull(tsParticles);
+
+        $(".hero-section")
+          .particles()
+          .init(
+            {
+              fpsLimit: 120,
+              interactivity: {
+                events: {
+                  onClick: {
+                    enable: true,
+                    mode: "push",
+                  },
+                  onHover: {
+                    enable: true,
+                    mode: "repulse",
+                  },
+                },
+                modes: {
+                  push: {
+                    quantity: 4,
+                  },
+                  repulse: {
+                    distance: 200,
+                    duration: 0.4,
+                  },
+                },
+              },
+              particles: {
+                color: {
+                  value: "#000",
+                },
+                links: {
+                  color: "#000",
+                  distance: 150,
+                  enable: true,
+                  opacity: 0.5,
+                  width: 1,
+                },
+                move: {
+                  direction: "none",
+                  enable: true,
+                  outModes: {
+                    default: "bounce",
+                  },
+                  random: false,
+                  speed: 6,
+                  straight: false,
+                },
+                number: {
+                  density: {
+                    enable: true,
+                  },
+                  value: 80,
+                },
+                opacity: {
+                  value: 0.5,
+                },
+                shape: {
+                  type: ["circle", "square"],
+                },
+                size: {
+                  value: { min: 1, max: 5 },
+                },
+              },
+              detectRetina: true,
+            },
+            function (container) {
+              // container is the particles container where you can play/pause or stop/start.
+              // the container is already started, you don't need to start it manually.
+            }
+          );
+      });
+        </script>
     </body>
 </html>
